@@ -35,9 +35,13 @@
 
 				<ul class="nav nav-list">
 					<li class="">
-						<a href="/">
+						<a href="{{url('/')}}">
 							<i class="menu-icon fa fa-tachometer"></i>
 							<span class="menu-text"> Dashboard </span>
+						</a>
+						<a href="{{ route('test') }}">
+							<i class="menu-icon fa fa-tachometer"></i>
+							<span class="menu-text"> Tested </span>
 						</a>
 
 						<b class="arrow"></b>
@@ -56,7 +60,7 @@
 						<b class="arrow"></b>
 
 						<ul class="submenu">
-							
+
 							<li class="">
 								<a href="/profile">
 									<i class="menu-icon fa fa-caret-right"></i>

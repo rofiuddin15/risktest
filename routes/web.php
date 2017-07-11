@@ -12,10 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('template');
+    return view('test.dashboard');
 });
 
 Route::get('/blog', 'BlogController@index');
 Route::get('/blog/{id}', 'BlogController@show');
 
 Route::get('/profile', 'ProfileController@index');
+
+Route::get('/test', ['as'=>'test', 'uses'=>'TestedController@index']);
