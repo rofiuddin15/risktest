@@ -12,7 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('test.dashboard');
+    //return view('test.dashboard');
+    return view('layouts.home');
 });
 
 Route::get('/blog', 'BlogController@index');
